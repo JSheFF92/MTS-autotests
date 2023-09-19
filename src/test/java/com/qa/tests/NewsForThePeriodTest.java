@@ -11,6 +11,7 @@ public class NewsForThePeriodTest extends BaseTest {
 
     @Test
     @Tag("Smoke")
+    @Tag("Smoke_pass")
     @Tag("NewsForPeriodTest")
     @DisplayName("6. News for the period")
     void newsForThePeriod() {
@@ -23,28 +24,19 @@ public class NewsForThePeriodTest extends BaseTest {
         step("Open news page", () ->
             newsPage
                     .openCareerPage()
-//            $(".footer__menu a:nth-child(7)").click();
         );
 
         step("Checking the news page", () ->
             newsPage
                     .checkNewsUrlAndNamePage("Новости")
-//            webdriver().shouldHave(url("https://moskva.mts.ru/personal/novosti"));
-//            $("h1").shouldHave(text("Новости"));
-
         );
+
         step("Choice news for 2023", () ->
-//
-//            $("[id='mat-select-value-1']").click();
-//            $(".mat-select-old-ds__select-panel :nth-child(2) .mat-option-text").click();
             newsPage
                     .choiceNewsYear()
         );
 
         step("Choice period news", () ->
-//                    $("[id='mat-select-2']").click();
-////
-//            $(".mat-select-old-ds__select-panel :nth-child(1) .mat-option-text").click();
 
             newsPage
                     .choiceNewsPeriod()
@@ -52,17 +44,12 @@ public class NewsForThePeriodTest extends BaseTest {
         );
 
         step("Choice categories news", () ->
-//                    $("[id='mat-select-4']").click();
-//                      $("[id='mat-checkbox-1']").click();
             newsPage
                     .choiceNewsCategories()
 
         );
 
         step("Check result", () ->
-//                    $("[id='mat-select-4']").click();
-//                      $("[id='mat-checkbox-1']").click();
-
             newsPage
                     .checkFinalResult()
         );

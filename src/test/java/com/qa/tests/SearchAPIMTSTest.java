@@ -11,6 +11,7 @@ public class SearchAPIMTSTest extends BaseTest {
 
     @Test
     @Tag("Smoke")
+    @Tag("Smoke_pass")
     @Tag("SearchAPIMTS")
     @DisplayName("4. Search API MTS")
     void searchAPIMTSTest() {

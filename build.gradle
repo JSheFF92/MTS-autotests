@@ -58,6 +58,16 @@ task Smoke_Test(type: Test) {
         includeTags "Smoke"
     }
 }
+task SmokePass_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "Smoke_pass"
+    }
+}
+task SmokeFailed_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "Smoke_failed"
+    }
+}
 
 task ChoiceNumber_test(type: Test) {
     useJUnitPlatform {

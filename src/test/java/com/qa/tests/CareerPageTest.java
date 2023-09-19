@@ -10,6 +10,7 @@ public class CareerPageTest extends BaseTest {
 
     @Test
     @Tag("Smoke")
+    @Tag("Smoke_pass")
     @Tag("VacanciesInIT")
     @DisplayName("1. Section Vacancies in IT")
     void careerInITTest() {

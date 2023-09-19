@@ -11,6 +11,7 @@ public class SpamCallsIsArchivedTest extends BaseTest {
 
     @Test
     @Tag("Smoke")
+    @Tag("Smoke_pass")
     @Tag("BlockSpamCalls")
     @DisplayName("3. Blocking spam calls is archived")
     void archiveSpamCallsTest() {

@@ -13,7 +13,8 @@ public class SpamCallsIsArchivedPage {
                     goArchive = $("mts-button .mts-button--color--ghost"),
                     archiveList = $(".archive-list"),
                     choiceArchiveServices = $(".filters__content-item div:nth-child(2) a"),
-                    rightChoice = $("h1");
+                    rightChoice = $("h1"),
+                    acceptCookies = $(".mat-dialog-content button");
 
     public SpamCallsIsArchivedPage openMTSPage() {
         open("/");
@@ -40,8 +41,8 @@ public class SpamCallsIsArchivedPage {
     }
 
     public SpamCallsIsArchivedPage goToArchive() {
-        $(".mat-dialog-content button").click();
-        goArchive.shouldHave(text("Архивные услуги")).click();
+        acceptCookies.click();
+        goArchive.click();
 
         return this;
     }

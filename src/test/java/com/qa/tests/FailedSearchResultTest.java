@@ -10,6 +10,7 @@ public class FailedSearchResultTest extends BaseTest {
 
     @Test
     @Tag("Smoke")
+    @Tag("Smoke_failed")
     @Tag("FailedSearchResult")
     @DisplayName("2. No search results")
     void careerInITTest() {

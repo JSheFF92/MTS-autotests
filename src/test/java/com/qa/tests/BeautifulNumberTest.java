@@ -10,6 +10,7 @@ public class BeautifulNumberTest extends BaseTest {
 
     @Test
     @Tag("Smoke")
+    @Tag("Smoke_pass")
     @Tag("ChoiceNumber")
     @DisplayName("5. Choice beautiful number from 1000 to 5000")
     void choiceBeautifulNumberTest() {
