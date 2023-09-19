@@ -40,6 +40,7 @@ public class SpamCallsIsArchivedPage {
     }
 
     public SpamCallsIsArchivedPage goToArchive() {
+        $(".mat-dialog-content button").click();
         goArchive.shouldHave(text("Архивные услуги")).click();
 
         return this;
