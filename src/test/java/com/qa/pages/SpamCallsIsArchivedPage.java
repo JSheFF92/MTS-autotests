@@ -40,7 +40,7 @@ public class SpamCallsIsArchivedPage {
     }
 
     public SpamCallsIsArchivedPage goToArchive() {
-        goArchive.click();
+        goArchive.shouldHave(text("Архивные услуги")).click();
 
         return this;
     }
