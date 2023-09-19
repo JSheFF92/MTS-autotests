@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-
 public class SpamCallsIsArchivedTest extends BaseTest {
 
     @Test
@@ -28,10 +27,10 @@ public class SpamCallsIsArchivedTest extends BaseTest {
                     .checkMobileServices("Услуги мобильной связи");
         });
 
-        step("Go to archive", () -> {
+        step("Go to archive", () ->
             spamCallsIsArchived
-                    .goToArchive();
-        });
+                    .goToArchive()
+        );
 
         step("Choice mobile services", () -> {
             spamCallsIsArchived

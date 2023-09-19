@@ -9,11 +9,10 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 
 public class CareerPage {
 
-    SelenideElement
-            buttonOpenCareer = $x("//a[contains(text(), 'Карьера в МТС')]"),
-            buttonITAndDigital = $x("//a[contains(text(), 'IT и Digital')]"),
-            vacanciesPageText = $("#app");
-
+    private final SelenideElement
+                    buttonOpenCareer = $x("//a[contains(text(), 'Карьера в МТС')]"),
+                    buttonITAndDigital = $x("//a[contains(text(), 'IT и Digital')]"),
+                    vacanciesPageText = $("#app");
 
     public CareerPage openMTSPage() {
         open("/");

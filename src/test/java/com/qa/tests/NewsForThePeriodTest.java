@@ -20,51 +20,51 @@ public class NewsForThePeriodTest extends BaseTest {
                     .settingsRegistrationPage();
         });
 
-        step("Open news page", () -> {
+        step("Open news page", () ->
             newsPage
-                    .openCareerPage();
+                    .openCareerPage()
 //            $(".footer__menu a:nth-child(7)").click();
-        });
+        );
 
-        step("Checking the news page", () -> {
+        step("Checking the news page", () ->
             newsPage
-                    .checkNewsUrlAndNamePage("Новости");
+                    .checkNewsUrlAndNamePage("Новости")
 //            webdriver().shouldHave(url("https://moskva.mts.ru/personal/novosti"));
 //            $("h1").shouldHave(text("Новости"));
 
-        });
-        step("Choice news for 2023", () -> {
+        );
+        step("Choice news for 2023", () ->
 //
 //            $("[id='mat-select-value-1']").click();
 //            $(".mat-select-old-ds__select-panel :nth-child(2) .mat-option-text").click();
             newsPage
-                    .choiceNewsYear();
-        });
+                    .choiceNewsYear()
+        );
 
-        step("Choice period news", () -> {
+        step("Choice period news", () ->
 //                    $("[id='mat-select-2']").click();
 ////
 //            $(".mat-select-old-ds__select-panel :nth-child(1) .mat-option-text").click();
 
             newsPage
-                    .choiceNewsPeriod();
+                    .choiceNewsPeriod()
 
-        });
+        );
 
-        step("Choice categories news", () -> {
+        step("Choice categories news", () ->
 //                    $("[id='mat-select-4']").click();
 //                      $("[id='mat-checkbox-1']").click();
             newsPage
-                    .choiceNewsCategories();
+                    .choiceNewsCategories()
 
-        });
+        );
 
-        step("Check result", () -> {
+        step("Check result", () ->
 //                    $("[id='mat-select-4']").click();
 //                      $("[id='mat-checkbox-1']").click();
 
             newsPage
-                    .checkFinalResult();
-        });
+                    .checkFinalResult()
+        );
     }
 }

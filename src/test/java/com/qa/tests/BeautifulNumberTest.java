@@ -4,9 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-
 import static io.qameta.allure.Allure.step;
-
 
 public class BeautifulNumberTest extends BaseTest {
 
@@ -21,10 +19,10 @@ public class BeautifulNumberTest extends BaseTest {
                     .settingsRegistrationPage();
         });
 
-        step("Go to choice number page", () -> {
-            beautifulNumber
-                    .goToChoiceNumber("Выбрать красивый номер");
-        });
+        step("Go to choice number page", () ->
+                beautifulNumber
+                        .goToChoiceNumber("Выбрать красивый номер")
+        );
 
         step("Select number amount", () -> {
             beautifulNumber
@@ -32,9 +30,9 @@ public class BeautifulNumberTest extends BaseTest {
                     .choiceSliderPriceNumber();
         });
 
-        step("Checking the selection result", () -> {
-            beautifulNumber
-                    .searchNumberWithNeedPrice("1 000");
-        });
+        step("Checking the selection result", () ->
+                beautifulNumber
+                        .searchNumberWithNeedPrice("1 000")
+        );
     }
 }

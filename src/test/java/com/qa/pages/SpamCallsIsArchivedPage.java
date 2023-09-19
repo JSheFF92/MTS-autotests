@@ -7,13 +7,13 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class SpamCallsIsArchivedPage {
 
-    SelenideElement
-            goToServicesAndOptions = $(".navigations__cards-wrapper a:nth-child(2"),
-            checkServices = $("h1"),
-            goArchive = $("mts-button .mts-button--color--ghost"),
-            archiveList = $(".archive-list"),
-            choiceArchiveServices = $(".filters__content-item div:nth-child(2) a"),
-            rightChoice = $("h1");
+    private final SelenideElement
+                    goToServicesAndOptions = $(".navigations__cards-wrapper a:nth-child(2"),
+                    checkServices = $("h1"),
+                    goArchive = $("mts-button .mts-button--color--ghost"),
+                    archiveList = $(".archive-list"),
+                    choiceArchiveServices = $(".filters__content-item div:nth-child(2) a"),
+                    rightChoice = $("h1");
 
     public SpamCallsIsArchivedPage openMTSPage() {
         open("/");

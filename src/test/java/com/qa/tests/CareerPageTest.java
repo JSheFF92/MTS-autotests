@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-
 public class CareerPageTest extends BaseTest {
 
     @Test
@@ -20,13 +19,15 @@ public class CareerPageTest extends BaseTest {
                     .settingsRegistrationPage();
         });
 
-        step("Open career", () -> {
-            careerPage.openCareerPage();
-        });
+        step("Open career", () ->
+            careerPage
+                    .openCareerPage()
+        );
 
-        step("Checking the transition to a section", () -> {
-            careerPage.checkCareerUrl();
-        });
+        step("Checking the transition to a section", () ->
+            careerPage
+                    .checkCareerUrl()
+        );
         step("Section Vacancies in IT", () -> {
             careerPage
                     .openITAndDigitalSection()

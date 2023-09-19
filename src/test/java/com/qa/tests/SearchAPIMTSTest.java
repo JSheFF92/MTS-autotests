@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-
 public class SearchAPIMTSTest extends BaseTest {
 
     @Test
@@ -34,9 +33,9 @@ public class SearchAPIMTSTest extends BaseTest {
                     .searchServicesList("СПИСОК СЕРВИСОВ");
         });
 
-        step("Services APIs are present on the page", () -> {
+        step("Services APIs are present on the page", () ->
             searchAPIMTS
-                    .checkAPIList();
-        });
+                    .checkAPIList()
+        );
     }
 }

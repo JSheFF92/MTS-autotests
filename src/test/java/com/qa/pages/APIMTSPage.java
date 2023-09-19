@@ -9,7 +9,7 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 
 public class APIMTSPage {
 
-    SelenideElement
+    private final SelenideElement
             headerItem = $(".header__top-item_more"),
             developers = $(".ng-scrollbar-wrapper div:nth-child(6)"),
             servicesList = $(".dqyHYH"),

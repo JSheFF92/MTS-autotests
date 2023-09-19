@@ -9,17 +9,16 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 
 public class NewsForThePeriodPage {
 
-    SelenideElement
-            buttonOpenNews = $(".footer__menu a:nth-child(7)"),
-            newsNamePage = $(".section-box__title"),
-            widgetChoiceYear = $("[id='mat-select-value-1']"),
-            widgetYear = $(".mat-select-old-ds__select-panel :nth-child(2) .mat-option-text"),
-            widgetChoicePeriod = $("[id='mat-select-2']"),
-            widgetPeriod = $(".mat-select-old-ds__select-panel :nth-child(1) .mat-option-text"),
-            widgetChoiceCategories = $("[id='mat-select-4']"),
-            widgetCategories = $("#mat-checkbox-1 span.mat-checkbox-label"),
-            checkResult = $x("//*[contains(text(), '.2023')]");
-
+    private final SelenideElement
+                    buttonOpenNews = $(".footer__menu a:nth-child(7)"),
+                    newsNamePage = $(".section-box__title"),
+                    widgetChoiceYear = $("[id='mat-select-value-1']"),
+                    widgetYear = $(".mat-select-old-ds__select-panel :nth-child(2) .mat-option-text"),
+                    widgetChoicePeriod = $("[id='mat-select-2']"),
+                    widgetPeriod = $(".mat-select-old-ds__select-panel :nth-child(1) .mat-option-text"),
+                    widgetChoiceCategories = $("[id='mat-select-4']"),
+                    widgetCategories = $("#mat-checkbox-1 span.mat-checkbox-label"),
+                    checkResult = $x("//*[contains(text(), '.2023')]");
 
     public NewsForThePeriodPage openMTSPage() {
         open("/");

@@ -8,10 +8,10 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class NoSearchResultPage {
 
-    SelenideElement
-            goToHeaderSearchText = $(".header-search__text"),
-            goToHeaderSearchInput = $(".header-search__input"),
-            nothingFound = $("mts-search-content .mts-search__result-empty");
+    private final SelenideElement
+                    goToHeaderSearchText = $(".header-search__text"),
+                    goToHeaderSearchInput = $(".header-search__input"),
+                    nothingFound = $("mts-search-content .mts-search__result-empty");
 
     public NoSearchResultPage openMTSPage() {
         open("/");
