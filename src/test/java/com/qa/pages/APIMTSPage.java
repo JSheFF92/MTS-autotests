@@ -10,10 +10,10 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class APIMTSPage {
 
     private final SelenideElement
-            headerItem = $(".header__top-item_more"),
-            developers = $(".ng-scrollbar-wrapper div:nth-child(6)"),
-            servicesList = $(".dqyHYH"),
-            listAPI = $(".eqUlAG");
+                    headerItem = $(".header__top-item_more"),
+                    developers = $(".ng-scrollbar-wrapper div:nth-child(6)"),
+                    servicesList = $(".dqyHYH"),
+                    listAPI = $(".eqUlAG");
 
     public APIMTSPage openMTSPage() {
         open("/");
