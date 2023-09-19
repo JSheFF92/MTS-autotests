@@ -12,7 +12,7 @@ public class CareerPageTest extends BaseTest {
     @Tag("Smoke")
     @Tag("Smoke_pass")
     @Tag("VacanciesInIT")
-    @DisplayName("1. Section Vacancies in IT")
+    @DisplayName("Section Vacancies in IT")
     void careerInITTest() {
         step("Open form", () -> {
             careerPage

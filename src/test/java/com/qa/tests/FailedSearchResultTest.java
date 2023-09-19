@@ -12,7 +12,7 @@ public class FailedSearchResultTest extends BaseTest {
     @Tag("Smoke")
     @Tag("Smoke_failed")
     @Tag("FailedSearchResult")
-    @DisplayName("2. No search results")
+    @DisplayName("No search results")
     void careerInITTest() {
         step("Open form", () -> {
             noSearchResult

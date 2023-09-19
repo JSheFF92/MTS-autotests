@@ -12,7 +12,7 @@ public class BeautifulNumberTest extends BaseTest {
     @Tag("Smoke")
     @Tag("Smoke_pass")
     @Tag("ChoiceNumber")
-    @DisplayName("5. Choice beautiful number from 1000 to 5000")
+    @DisplayName("Choice beautiful number from 1000 to 5000")
     void choiceBeautifulNumberTest() {
         step("Open main page", () -> {
             beautifulNumber
