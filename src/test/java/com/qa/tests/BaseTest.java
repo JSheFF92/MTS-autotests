@@ -25,26 +25,26 @@ public class BaseTest {
     @BeforeAll
     static void beforeAll() {
 ////        open("https://moskva.mts.ru/");
-        Configuration.baseUrl = "https://moskva.mts.ru";
-        Configuration.browserSize = "1920x1080";
-        Configuration.pageLoadStrategy = "eager";
+//        Configuration.baseUrl = "https://moskva.mts.ru";
+//        Configuration.browserSize = "1920x1080";
+//        Configuration.pageLoadStrategy = "eager";
 ////        executeJavaScript("$('#fixedban').remove()");
 ////        executeJavaScript("$('footer').remove()");
-//        Configuration.browser = System.getProperty("browser", "chrome");
-//        Configuration.baseUrl = System.getProperty("baseUrl", "https://moskva.mts.ru");
-//        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-//        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
-//        Configuration.pageLoadStrategy = "eager";
-//        Configuration.timeout = 10000;
-//        Configuration.remote = System.getProperty("selenoidBaseUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-//
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-//                "enableVNC", true,
-//                "enableVideo", true
-//        ));
-//
-//        Configuration.browserCapabilities = capabilities;
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://moskva.mts.ru");
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
+        Configuration.pageLoadStrategy = "eager";
+        Configuration.timeout = 10000;
+        Configuration.remote = System.getProperty("selenoidBaseUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
+
+        Configuration.browserCapabilities = capabilities;
     }
 
     @BeforeEach
