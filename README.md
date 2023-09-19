@@ -2,7 +2,7 @@
 <h1 >Проект по автоматизации тестирования сайта <a href="https://moskva.mts.ru"> MTS</a></h1>
 
 <p align="center">  
-<img src="media/logo/MTS.png" alt="MainLogo" width="950"/></a>  
+<img src="media/logo/LogoMTS.png" alt="MainLogo" width="400"/></a>  
 </p>
 
 # 🧾 Содержание:
@@ -115,6 +115,6 @@ ____
 ## <img alt="Selenoid" height="25" src="media/logo/Selenoid.svg" width="25"/></a> Видеопример выполнения теста на Selenoid
 ____
 <p align="center">
-<img title="Selenoid Video" src="media/screen/TestGif.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="media/logo/TestVideo.gif" width="550" height="350"  alt="video">   
 </p>
 
