@@ -13,7 +13,7 @@ public class SpamCallsIsArchivedTest extends BaseTest {
     @Tag("Smoke")
     @Tag("Smoke_pass")
     @Tag("BlockSpamCalls")
-    @DisplayName("Blocking spam calls is archived")
+    @DisplayName("Архивная услуга 'Блокирование спам звонков'")
     void archiveSpamCallsTest() {
         step("Open main page", () -> {
             open("https://moskva.mts.ru");

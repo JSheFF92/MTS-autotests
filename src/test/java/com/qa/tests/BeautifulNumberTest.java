@@ -12,7 +12,7 @@ public class BeautifulNumberTest extends BaseTest {
     @Tag("Smoke")
     @Tag("Smoke_pass")
     @Tag("ChoiceNumber")
-    @DisplayName("Choice beautiful number from 1000 to 5000")
+    @DisplayName("Выбор красивого номера со стоимостью от 1000 до 5000 рублей")
     void choiceBeautifulNumberTest() {
         step("Open main page", () -> {
             beautifulNumber

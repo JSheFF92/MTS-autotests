@@ -13,7 +13,7 @@ public class SearchAPIMTSTest extends BaseTest {
     @Tag("Smoke")
     @Tag("Smoke_pass")
     @Tag("SearchAPIMTS")
-    @DisplayName("Search API MTS")
+    @DisplayName("Проверка списка API MTS")
     void searchAPIMTSTest() {
         step("Open main page", () -> {
             open("https://moskva.mts.ru");

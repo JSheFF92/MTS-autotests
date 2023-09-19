@@ -13,7 +13,7 @@ public class NewsForThePeriodTest extends BaseTest {
     @Tag("Smoke")
     @Tag("Smoke_pass")
     @Tag("NewsForPeriodTest")
-    @DisplayName("News for the period")
+    @DisplayName("Новости за период 2023 года")
     void newsForThePeriod() {
         step("Open form", () -> {
             newsPage
