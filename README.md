@@ -98,7 +98,7 @@
 <img title="Allure Tests" src="media/screen/TestCasesOps.png" width="850">  
 </p>
 
-## <img alt="Allure" height="25" src="media/logo/Jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-884">Jira</a>
+## <img alt="Allure" height="25" src="media/logo/Jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-891">Jira</a>
 
 <p align="center">  
 <img title="Jira" src="media/screen/Jira.png" width="">  
