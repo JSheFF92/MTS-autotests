@@ -33,10 +33,10 @@ public class CareerPageTest extends BaseTest {
             careerPage
                     .checkCareerUrl()
         );
-        step("Section Vacancies", () -> {
+        step("Section Vacancies", () ->
             careerPage
-                    .openITAndDigitalSection();
-        });
+                    .openITAndDigitalSection()
+        );
 
         step("Section Vacancies in IT", () -> {
             itAndDigitalPage
