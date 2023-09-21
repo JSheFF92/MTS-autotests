@@ -11,37 +11,14 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class NewsForThePeriodPage {
 
     private final SelenideElement
-//                    buttonOpenNews = $(".footer__menu a:nth-child(7)"),
                     newsNamePage = $(".section-box__title"),
                     widgetChoiceYear = $("[id='mat-select-value-1']"),
-//                    widgetYear = $(".mat-select-old-ds__select-panel :nth-child(2) .mat-option-text"),
                     widgetYear = $(".mat-select-old-ds__select-panel"),
                     widgetChoicePeriod = $("[id='mat-select-2']"),
-//                    widgetPeriod = $(".mat-select-old-ds__select-panel :nth-child(1) .mat-option-text"),
                     widgetPeriod = $(".mat-select-old-ds__select-panel"),
                     widgetChoiceCategories = $("[id='mat-select-4']"),
-//                    widgetCategories = $("#mat-checkbox-1 span.mat-checkbox-label"),
                     widgetCategories = $("#mat-checkbox-1"),
                     checkResult = $x("//*[contains(text(), '.2023')]");
-
-//    public NewsForThePeriodPage openMTSPage() {
-//        open("/");
-//
-//        return this;
-//    }
-//
-//    public NewsForThePeriodPage settingsRegistrationPage() {
-//        executeJavaScript("$('#fixedban').remove()");
-//        executeJavaScript("$('footer').remove()");
-//
-//        return this;
-//    }
-//
-//    public NewsForThePeriodPage openCareerPage() {
-//        buttonOpenNews.click();
-//
-//        return this;
-//    }
 
     public NewsForThePeriodPage checkNewsUrlAndNamePage(String value) {
         webdriver().shouldHave(url("https://moskva.mts.ru/personal/novosti"));
@@ -52,7 +29,6 @@ public class NewsForThePeriodPage {
 
     public NewsForThePeriodPage choiceNewsYear(String value) {
         widgetChoiceYear.click();
-//        widgetYear.click();
         widgetYear.$(byText(value)).click();
 
 
@@ -68,7 +44,6 @@ public class NewsForThePeriodPage {
 
     public NewsForThePeriodPage choiceNewsCategories(String value) {
         widgetChoiceCategories.click();
-//        widgetCategories.click();
         widgetCategories.$(byText(value)).click();
 
         return this;

@@ -1,7 +1,6 @@
 package com.qa.tests;
 
 import com.qa.pages.BeautifulNumberPage;
-import com.qa.pages.MainPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,7 +13,7 @@ public class BeautifulNumberTest extends BaseTest {
 
     @Test
     @Tag("Smoke")
-    @Tag("Smoke_pass")
+    @Tag("SmokePass")
     @Tag("ChoiceNumber")
     @DisplayName("Выбор красивого номера со стоимостью от 1000 до 5000 рублей")
     void choiceBeautifulNumberTest() {

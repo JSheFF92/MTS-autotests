@@ -87,7 +87,7 @@ task FailedSearchTest(type: Test) {
     }
 }
 
-task ApiMtsTest(type: Test) { //пересмостреть названия??? на 9 пункте остановился
+task ApiMtsTest(type: Test) {
     useJUnitPlatform {
         includeTags "ApiMts"
     }

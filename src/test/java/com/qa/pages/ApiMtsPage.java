@@ -2,7 +2,6 @@ package com.qa.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
@@ -14,31 +13,6 @@ public class ApiMtsPage {
                     developers = $(".ng-scrollbar-wrapper div:nth-child(6)"),
                     servicesList = $(".dqyHYH"),
                     listAPI = $(".eqUlAG");
-
-//    public ApiMtsPage openMTSPage() {
-//        open("/");
-//
-//        return this;
-//    }
-//
-//    public ApiMtsPage settingsRegistrationPage() {
-//        executeJavaScript("$('#fixedban').remove()");
-//        executeJavaScript("$('footer').remove()");
-//
-//        return this;
-//    }
-
-//    public ApiMtsPage goToHeaderTopItem() {
-//        headerItem.click();
-//
-//        return this;
-//    }
-//
-//    public ApiMtsPage goToDevelopersPage() {
-//        developers.click();
-//
-//        return this;
-//    }
 
     public ApiMtsPage checkDevelopersUrl() {
         webdriver().shouldHave(url("https://developers.mts.ru/"));

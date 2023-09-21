@@ -16,21 +16,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class BaseTest {
     MainPage mainPage = new MainPage();
-//    CareerPage careerPage = new CareerPage();
-//    NoSearchResultPage noSearchResultPage = new NoSearchResultPage();
-//    SpamCallsIsArchivedPage spamCallsIsArchivedPage = new SpamCallsIsArchivedPage();
-//    APIMTSPage searchAPIMTSPage = new APIMTSPage();
-//    BeautifulNumberPage beautifulNumber = new BeautifulNumberPage();
-//    NewsForThePeriodPage newsPage = new NewsForThePeriodPage();
 
     @BeforeAll
     static void beforeAll() {
-////        open("https://moskva.mts.ru/");
-//        Configuration.baseUrl = "https://moskva.mts.ru";
-//        Configuration.browserSize = "1920x1080";
-//        Configuration.pageLoadStrategy = "eager";
-////        executeJavaScript("$('#fixedban').remove()");
-////        executeJavaScript("$('footer').remove()");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.baseUrl = System.getProperty("baseUrl", "https://moskva.mts.ru");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
