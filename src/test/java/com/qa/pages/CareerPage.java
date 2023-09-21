@@ -10,28 +10,28 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class CareerPage {
 
     private final SelenideElement
-                    buttonOpenCareer = $x("//a[contains(text(), 'Карьера в МТС')]"),
+//                    buttonOpenCareer = $x("//a[contains(text(), 'Карьера в МТС')]"),
                     buttonITAndDigital = $x("//a[contains(text(), 'IT и Digital')]"),
                     vacanciesPageText = $("#app");
 
-    public CareerPage openMTSPage() {
-        open("/");
+//    public CareerPage openMTSPage() {
+//        open("/");
+//
+//        return this;
+//    }
+//
+//    public CareerPage settingsRegistrationPage() {
+//        executeJavaScript("$('#fixedban').remove()");
+//        executeJavaScript("$('footer').remove()");
+//
+//        return this;
+//    }
 
-        return this;
-    }
-
-    public CareerPage settingsRegistrationPage() {
-        executeJavaScript("$('#fixedban').remove()");
-        executeJavaScript("$('footer').remove()");
-
-        return this;
-    }
-
-    public CareerPage openCareerPage() {
-        buttonOpenCareer.click();
-
-        return this;
-    }
+//    public CareerPage openCareerPage() {
+//        buttonOpenCareer.click();
+//
+//        return this;
+//    }
 
     public CareerPage checkCareerUrl() {
         webdriver().shouldHave(url("https://job.mts.ru/"));

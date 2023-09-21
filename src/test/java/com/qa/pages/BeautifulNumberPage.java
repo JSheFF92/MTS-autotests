@@ -9,35 +9,34 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class BeautifulNumberPage {
 
     private final SelenideElement
-                    menuCatalog = $(".middle-menu__catalog-text"),
-                    menuCardList = $(".menu-card.menu-card__list.in-sidebar a:nth-child(4)"),
+//                    menuCatalog = $(".middle-menu__catalog-text"),
+//                    menuCardList = $(".menu-card.menu-card__list.in-sidebar a:nth-child(4)"),
                     sliderMaxPrice = $("[role='slider'].ngx-slider-pointer-max"),
                     sliderMinPrice = $("[role='slider'].ngx-slider-pointer-min"),
-                    choicePriceMax = $("span:nth-child(4)  ngx-slider-tooltip-wrapper"),
-                    choicePriceMin = $("span:nth-child(3)  ngx-slider-tooltip-wrapper"),
+                    choicePriceMax = $("span:nth-child(4) ngx-slider-tooltip-wrapper"),
+                    choicePriceMin = $("span:nth-child(3) ngx-slider-tooltip-wrapper"),
                     searchNeedNumber = $("mts-search-form form button"),
-        //            checkFilterPrice = $x("//*[text()[contains(.,'1 000')] and text()[contains(.,'₽')]]");
                     checkFilterPrice = $x("//*[text()[contains(.,'1 000')]]");
 
-    public BeautifulNumberPage openMTSPage() {
-        open("/");
+//    public BeautifulNumberPage openMTSPage() {
+//        open("/");
+//
+//        return this;
+//    }
+//
+//    public BeautifulNumberPage settingsRegistrationPage() {
+//        executeJavaScript("$('#fixedban').remove()");
+//        executeJavaScript("$('footer').remove()");
+//
+//        return this;
+//    }
 
-        return this;
-    }
-
-    public BeautifulNumberPage settingsRegistrationPage() {
-        executeJavaScript("$('#fixedban').remove()");
-        executeJavaScript("$('footer').remove()");
-
-        return this;
-    }
-
-    public BeautifulNumberPage goToChoiceNumber(String value) {
-        menuCatalog.click();
-        menuCardList.shouldHave(text(value)).click();
-
-        return this;
-    }
+//    public BeautifulNumberPage goToChoiceNumber(String value) {
+//        menuCatalog.click();
+//        menuCardList.shouldHave(text(value)).click();
+//
+//        return this;
+//    }
 
     public BeautifulNumberPage checkChoiceUrl() {
         webdriver().shouldHave(url("https://moskva.mts.ru/personal/vybrat-nomer"));
@@ -45,12 +44,8 @@ public class BeautifulNumberPage {
     }
 
     public BeautifulNumberPage choiceSliderPriceNumber() {
-        SelenideElement sliderMax = sliderMaxPrice;
-        SelenideElement priceMax = choicePriceMax;
-        actions().clickAndHold(sliderMax).moveToElement(priceMax).release().build().perform();
-        SelenideElement sliderMin = sliderMinPrice;
-        SelenideElement priceMin = choicePriceMin;
-        actions().clickAndHold(sliderMin).moveToElement(priceMin).release().build().perform();
+        actions().clickAndHold(sliderMaxPrice).moveToElement(choicePriceMax).release().build().perform();
+        actions().clickAndHold(sliderMinPrice).moveToElement(choicePriceMin).release().build().perform();
 
         return this;
     }

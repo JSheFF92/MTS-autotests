@@ -15,12 +15,13 @@ import java.util.Map;
 import static com.codeborne.selenide.Selenide.*;
 
 public class BaseTest {
-    CareerPage careerPage = new CareerPage();
-    NoSearchResultPage noSearchResult = new NoSearchResultPage();
-    SpamCallsIsArchivedPage spamCallsIsArchived = new SpamCallsIsArchivedPage();
-    APIMTSPage searchAPIMTS = new APIMTSPage();
-    BeautifulNumberPage beautifulNumber = new BeautifulNumberPage();
-    NewsForThePeriodPage newsPage = new NewsForThePeriodPage();
+    MainPage mainPage = new MainPage();
+//    CareerPage careerPage = new CareerPage();
+//    NoSearchResultPage noSearchResultPage = new NoSearchResultPage();
+//    SpamCallsIsArchivedPage spamCallsIsArchivedPage = new SpamCallsIsArchivedPage();
+//    APIMTSPage searchAPIMTSPage = new APIMTSPage();
+//    BeautifulNumberPage beautifulNumber = new BeautifulNumberPage();
+//    NewsForThePeriodPage newsPage = new NewsForThePeriodPage();
 
     @BeforeAll
     static void beforeAll() {

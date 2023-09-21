@@ -1,5 +1,6 @@
 package com.qa.tests;
 
+import com.qa.pages.CareerPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,20 +9,22 @@ import static io.qameta.allure.Allure.step;
 
 public class CareerPageTest extends BaseTest {
 
+    CareerPage careerPage = new CareerPage();
+
     @Test
     @Tag("Smoke")
-    @Tag("Smoke_pass")
-    @Tag("VacanciesInIT")
+    @Tag("SmokePass")
+    @Tag("Vacancies")
     @DisplayName("Страница вакансий в ИТ")
     void careerInITTest() {
         step("Open form", () -> {
-            careerPage
-                    .openMTSPage()
+            mainPage
+                    .openPage()
                     .settingsRegistrationPage();
         });
 
         step("Open career", () ->
-            careerPage
+            mainPage
                     .openCareerPage()
         );
 

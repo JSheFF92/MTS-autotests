@@ -1,5 +1,7 @@
 package com.qa.tests;
 
+import com.qa.pages.MainPage;
+import com.qa.pages.NoSearchResultPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,26 +10,28 @@ import static io.qameta.allure.Allure.step;
 
 public class FailedSearchResultTest extends BaseTest {
 
+    NoSearchResultPage noSearchResultPage = new NoSearchResultPage();
+
     @Test
     @Tag("Smoke")
-    @Tag("Smoke_failed")
-    @Tag("FailedSearchResult")
+    @Tag("SmokeFailed")
+    @Tag("FailedSearch")
     @DisplayName("Отсутвие результатов поиска")
     void careerInITTest() {
         step("Open form", () -> {
-            noSearchResult
-                    .openMTSPage()
+            mainPage
+                    .openPage()
                     .settingsRegistrationPage();
         });
 
         step("Search", () -> {
-            noSearchResult
+            mainPage
                     .openHeaderSearchText()
                     .headerSearchInput("Hello, I'm Evgeniy and I'm looking for a job");
         });
 
         step("Nothing found for your request", () ->
-            noSearchResult
+            noSearchResultPage
                      .nothingFoundResult("По вашему запросу ничего не найдено")
         );
     }

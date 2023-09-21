@@ -53,54 +53,54 @@ tasks.withType(Test) {
 }
 
 
-task Smoke_Test(type: Test) {
+task SmokeTest(type: Test) {
     useJUnitPlatform {
         includeTags "Smoke"
     }
 }
-task SmokePass_test(type: Test) {
+task SmokePassTest(type: Test) {
     useJUnitPlatform {
-        includeTags "Smoke_pass"
+        includeTags "SmokePass"
     }
 }
-task SmokeFailed_test(type: Test) {
+task SmokeFailedTest(type: Test) {
     useJUnitPlatform {
-        includeTags "Smoke_failed"
+        includeTags "SmokeFailed"
     }
 }
 
-task ChoiceNumber_test(type: Test) {
+task ChoiceNumberTest(type: Test) {
     useJUnitPlatform {
         includeTags "ChoiceNumber"
     }
 }
 
-task VacanciesInIT_test(type: Test) {
+task VacanciesTest(type: Test) {
     useJUnitPlatform {
-        includeTags "VacanciesInIT"
+        includeTags "Vacancies"
     }
 }
 
-task FailedSearchResult_test(type: Test) {
+task FailedSearchTest(type: Test) {
     useJUnitPlatform {
-        includeTags "FailedSearchResult"
+        includeTags "FailedSearch"
     }
 }
 
-task SearchAPIMTS_test(type: Test) {
+task ApiMtsTest(type: Test) { //пересмостреть названия??? на 9 пункте остановился
     useJUnitPlatform {
-        includeTags "SearchAPIMTS"
+        includeTags "ApiMts"
     }
 }
 
-task BlockSpamCalls_test(type: Test) {
+task SpamCallsTest(type: Test) {
     useJUnitPlatform {
-        includeTags "BlockSpamCalls"
+        includeTags "SpamCalls"
     }
 }
 
-task NewsForPeriodTest_test(type: Test) {
+task NewsTest(type: Test) {
     useJUnitPlatform {
-        includeTags "NewsForPeriodTest"
+        includeTags "News"
     }
 }

@@ -8,34 +8,33 @@ import static com.codeborne.selenide.Selenide.*;
 public class SpamCallsIsArchivedPage {
 
     private final SelenideElement
-                    goToServicesAndOptions = $(".navigations__cards-wrapper a:nth-child(2"),
-                    checkServices = $("h1"),
+//                    goToServicesAndOptions = $(".navigations__cards-wrapper a:nth-child(2)"),
+                    checkResult = $("h1"),
                     goArchive = $("mts-button .mts-button--color--ghost"),
                     archiveList = $(".archive-list"),
                     choiceArchiveServices = $(".filters__content-item div:nth-child(2) a"),
-                    rightChoice = $("h1"),
                     acceptCookies = $(".mat-dialog-content button");
 
-    public SpamCallsIsArchivedPage openMTSPage() {
-        open("/");
+//    public SpamCallsIsArchivedPage openMTSPage() {
+//        open("/");
+//
+//        return this;
+//    }
+//    public SpamCallsIsArchivedPage settingsRegistrationPage() {
+//        executeJavaScript("$('#fixedban').remove()");
+//        executeJavaScript("$('footer').remove()");
+//
+//        return this;
+//    }
 
-        return this;
-    }
-    public SpamCallsIsArchivedPage settingsRegistrationPage() {
-        executeJavaScript("$('#fixedban').remove()");
-        executeJavaScript("$('footer').remove()");
-
-        return this;
-    }
-
-    public SpamCallsIsArchivedPage goToSectionServicesAndOptions() {
-        goToServicesAndOptions.click();
-
-        return this;
-    }
+//    public SpamCallsIsArchivedPage goToSectionServicesAndOptions() {
+//        goToServicesAndOptions.click();
+//
+//        return this;
+//    }
 
     public SpamCallsIsArchivedPage checkMobileServices(String value) {
-        checkServices.shouldHave(text(value));
+        checkResult.shouldHave(text(value));
 
         return this;
     }
@@ -60,7 +59,7 @@ public class SpamCallsIsArchivedPage {
     }
 
     public SpamCallsIsArchivedPage checkRightService(String value) {
-        rightChoice.shouldHave(text(value));
+        checkResult.shouldHave(text(value));
 
         return this;
     }

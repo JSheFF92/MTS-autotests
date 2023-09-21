@@ -1,5 +1,7 @@
 package com.qa.tests;
 
+import com.qa.pages.BeautifulNumberPage;
+import com.qa.pages.MainPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,6 +10,8 @@ import static io.qameta.allure.Allure.step;
 
 public class BeautifulNumberTest extends BaseTest {
 
+    BeautifulNumberPage beautifulNumberPage = new BeautifulNumberPage();
+
     @Test
     @Tag("Smoke")
     @Tag("Smoke_pass")
@@ -15,24 +19,24 @@ public class BeautifulNumberTest extends BaseTest {
     @DisplayName("Выбор красивого номера со стоимостью от 1000 до 5000 рублей")
     void choiceBeautifulNumberTest() {
         step("Open main page", () -> {
-            beautifulNumber
-                    .openMTSPage()
+            mainPage
+                    .openPage()
                     .settingsRegistrationPage();
         });
 
         step("Go to choice number page", () ->
-                beautifulNumber
+                mainPage
                         .goToChoiceNumber("Выбрать красивый номер")
         );
 
         step("Select number amount", () -> {
-            beautifulNumber
+            beautifulNumberPage
                     .checkChoiceUrl()
                     .choiceSliderPriceNumber();
         });
 
         step("Checking the selection result", () ->
-                beautifulNumber
+                beautifulNumberPage
                         .searchNumberWithNeedPrice("1 000")
         );
     }
