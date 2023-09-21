@@ -1,6 +1,8 @@
 package com.qa.tests;
 
-import com.qa.pages.SpamCallsIsArchivedPage;
+import com.qa.pages.MobileServiceArchivePage;
+import com.qa.pages.MobileServicePage;
+import com.qa.pages.SpamCallsArchivePage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -10,7 +12,9 @@ import static io.qameta.allure.Allure.step;
 
 public class SpamCallsIsArchivedTest extends BaseTest {
 
-    SpamCallsIsArchivedPage spamCallsIsArchivedPage = new SpamCallsIsArchivedPage();
+    MobileServiceArchivePage mobileServiceArchivePage = new MobileServiceArchivePage();
+    MobileServicePage mobileServicePage = new MobileServicePage();
+    SpamCallsArchivePage spamCallsIsArchivedPage = new SpamCallsArchivePage();
 
     @Test
     @Tag("Smoke")
@@ -28,20 +32,23 @@ public class SpamCallsIsArchivedTest extends BaseTest {
         step("Go to section 'Services and options'", () ->
             mainPage
                     .goToSectionServicesAndOptions()
-
         );
 
         step("Go to archive", () -> {
-            spamCallsIsArchivedPage
+            mobileServicePage
                     .checkMobileServices("Услуги мобильной связи")
                     .goToArchive();
         });
 
         step("Choice mobile services", () -> {
-            spamCallsIsArchivedPage
-                    .goToArchiveList("Звонки")
-                    .goChoiceArchiveService("Блокировка спам-звонков")
-                    .checkRightService("Блокировка спам-звонков");
+            mobileServiceArchivePage
+                    .goToArchiveList("Звонки");
         });
+
+        step("Choice archive block calls", () -> {
+        spamCallsIsArchivedPage
+                .goChoiceArchiveService("Блокировка спам-звонков")
+                .checkRightService("Блокировка спам-звонков");
+    });
     }
 }

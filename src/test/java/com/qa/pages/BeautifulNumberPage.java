@@ -18,6 +18,7 @@ public class BeautifulNumberPage {
 
     public BeautifulNumberPage checkChoiceUrl() {
         webdriver().shouldHave(url("https://moskva.mts.ru/personal/vybrat-nomer"));
+
         return this;
     }
 

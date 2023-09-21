@@ -13,7 +13,7 @@ public class MainPage {
                     goToServicesAndOptions = $(".navigations__cards-wrapper a:nth-child(2)"),
                     buttonOpenNews = $(".footer__menu a:nth-child(7)"),
                     goToHeaderSearchText = $(".header-search__text"),
-                    goToHeaderSearchInput = $(".header-search__input"),
+                    enterIntoTheSearch = $(".header-search__input"),
                     menuCatalog = $(".middle-menu__catalog-text"),
                     menuCardList = $(".in-sidebar a:nth-child(4)");
 
@@ -49,8 +49,8 @@ public class MainPage {
         return this;
     }
 
-    public MainPage headerSearchInput(String value) {
-        goToHeaderSearchInput.setValue(value).pressEnter();
+    public MainPage search(String value) {
+        enterIntoTheSearch.setValue(value).pressEnter();
 
         return this;
     }

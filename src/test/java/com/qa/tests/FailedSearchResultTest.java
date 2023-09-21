@@ -1,6 +1,5 @@
 package com.qa.tests;
 
-import com.qa.pages.MainPage;
 import com.qa.pages.NoSearchResultPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -27,7 +26,7 @@ public class FailedSearchResultTest extends BaseTest {
         step("Search", () -> {
             mainPage
                     .openHeaderSearchText()
-                    .headerSearchInput("Hello, I'm Evgeniy and I'm looking for a job");
+                    .search("Hello, I'm Evgeniy and I'm looking for a job");
         });
 
         step("Nothing found for your request", () ->

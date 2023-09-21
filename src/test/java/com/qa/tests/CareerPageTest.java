@@ -1,6 +1,7 @@
 package com.qa.tests;
 
 import com.qa.pages.CareerPage;
+import com.qa.pages.ItAndDigitalPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 public class CareerPageTest extends BaseTest {
-
+    ItAndDigitalPage itAndDigitalPage = new ItAndDigitalPage();
     CareerPage careerPage = new CareerPage();
 
     @Test
@@ -32,9 +33,14 @@ public class CareerPageTest extends BaseTest {
             careerPage
                     .checkCareerUrl()
         );
-        step("Section Vacancies in IT", () -> {
+        step("Section Vacancies", () -> {
             careerPage
-                    .openITAndDigitalSection()
+                    .openITAndDigitalSection();
+        });
+
+        step("Section Vacancies in IT", () -> {
+            itAndDigitalPage
+                    .checkItAndDigitalUrl()
                     .checkVacanciesText("Вакансии");
         });
     }

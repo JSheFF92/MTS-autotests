@@ -1,5 +1,6 @@
 package com.qa.tests;
 
+import com.qa.pages.NewsFor2023Page;
 import com.qa.pages.NewsForThePeriodPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -11,6 +12,7 @@ import static io.qameta.allure.Allure.step;
 public class NewsForThePeriodTest extends BaseTest {
 
     NewsForThePeriodPage newsPage = new NewsForThePeriodPage();
+    NewsFor2023Page newsFor2023Page = new NewsFor2023Page();
 
     @Test
     @Tag("Smoke")
@@ -52,7 +54,7 @@ public class NewsForThePeriodTest extends BaseTest {
         );
 
         step("Check result", () ->
-            newsPage
+            newsFor2023Page
                     .checkFinalResult()
         );
     }
