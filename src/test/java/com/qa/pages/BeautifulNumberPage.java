@@ -22,7 +22,7 @@ public class BeautifulNumberPage {
         return this;
     }
 
-    public BeautifulNumberPage choiceSliderPriceNumber() {
+    public BeautifulNumberPage selectSliderPriceNumber() {
         actions().clickAndHold(sliderMaxPrice).moveToElement(choicePriceMax).release().build().perform();
         actions().clickAndHold(sliderMinPrice).moveToElement(choicePriceMin).release().build().perform();
 

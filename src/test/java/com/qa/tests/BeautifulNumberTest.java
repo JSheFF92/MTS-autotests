@@ -25,13 +25,13 @@ public class BeautifulNumberTest extends BaseTest {
 
         step("Go to choice number page", () ->
                 mainPage
-                        .goToChoiceNumber("Выбрать красивый номер")
+                        .goToNumberPage("Выбрать красивый номер")
         );
 
         step("Select number amount", () -> {
             beautifulNumberPage
                     .checkChoiceUrl()
-                    .choiceSliderPriceNumber();
+                    .selectSliderPriceNumber();
         });
 
         step("Checking the selection result", () ->

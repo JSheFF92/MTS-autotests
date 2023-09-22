@@ -12,11 +12,11 @@ public class NewsForThePeriodPage {
     private final SelenideElement
                     newsNamePage = $(".section-box__title"),
                     widgetYear = $("[id='mat-select-value-1']"),
-                    selectWidgetYear = $(".mat-select-old-ds__select-panel"),
+                    choiceWidgetYear = $(".mat-select-old-ds__select-panel"),
                     widgetPeriod = $("[id='mat-select-2']"),
-                    widgetSelectPeriod = $(".mat-select-old-ds__select-panel"),
+                    choiceWidgetPeriod = $(".mat-select-old-ds__select-panel"),
                     widgetCategories = $("[id='mat-select-4']"),
-                    widgetSelectCategories = $("#mat-checkbox-1");
+                    choiceWidgetCategories = $("#mat-checkbox-1");
 
     public NewsForThePeriodPage checkNewsUrlAndNamePage(String value) {
         webdriver().shouldHave(url("https://moskva.mts.ru/personal/novosti"));
@@ -25,23 +25,23 @@ public class NewsForThePeriodPage {
         return this;
     }
 
-    public NewsForThePeriodPage choiceNewsYear(String value) {
+    public NewsForThePeriodPage selectNewsYear(String value) {
         widgetYear.click();
-        selectWidgetYear.$(byText(value)).click();
+        choiceWidgetYear.$(byText(value)).click();
 
         return this;
     }
 
-    public NewsForThePeriodPage choiceNewsPeriod(String value) {
+    public NewsForThePeriodPage selectNewsPeriod(String value) {
         widgetPeriod.click();
-        widgetSelectPeriod.$(byText(value)).click();
+        choiceWidgetPeriod.$(byText(value)).click();
 
         return this;
     }
 
-    public NewsForThePeriodPage choiceNewsCategories(String value) {
+    public NewsForThePeriodPage selectNewsCategories(String value) {
         widgetCategories.click();
-        widgetSelectCategories.$(byText(value)).click();
+        choiceWidgetCategories.$(byText(value)).click();
 
         return this;
     }

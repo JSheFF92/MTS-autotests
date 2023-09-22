@@ -30,7 +30,7 @@ public class MainPage {
         return this;
     }
 
-    public MainPage goToChoiceNumber(String value) {
+    public MainPage goToNumberPage(String value) {
         menuCatalog.click();
         menuCardList.shouldHave(text(value)).click();
 

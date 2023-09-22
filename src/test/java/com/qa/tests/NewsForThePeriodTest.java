@@ -38,18 +38,18 @@ public class NewsForThePeriodTest extends BaseTest {
 
         step("Choice news for 2023", () ->
             newsPage
-                    .choiceNewsYear("2023")
+                    .selectNewsYear("2023")
         );
 
         step("Choice period news", () ->
             newsPage
-                    .choiceNewsPeriod("Весь год")
+                    .selectNewsPeriod("Весь год")
 
         );
 
         step("Choice categories news", () ->
             newsPage
-                    .choiceNewsCategories("Выбрать все")
+                    .selectNewsCategories("Выбрать все")
 
         );
 
