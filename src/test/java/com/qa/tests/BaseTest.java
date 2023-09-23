@@ -2,6 +2,9 @@ package com.qa.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import com.qa.config.ConfigReader;
+import com.qa.config.WebConfig;
+import com.qa.config.WebConfigForProject;
 import com.qa.helpers.Attach;
 import com.qa.pages.*;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -16,6 +19,17 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class BaseTest {
     MainPage mainPage = new MainPage();
+
+//    private static final WebConfig config = ConfigReader.Instance.read();
+//
+//    @BeforeAll
+//    public static void beforeAll() {
+//        SelenideLogger.addListener("allure", new AllureSelenide());
+//        WebConfigForProject webConfigForProject = new WebConfigForProject(config);
+//        Configuration.pageLoadStrategy = "eager";
+//        webConfigForProject.webConfig();
+//
+//    }
 
     @BeforeAll
     static void beforeAll() {
