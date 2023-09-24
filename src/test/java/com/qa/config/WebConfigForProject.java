@@ -16,6 +16,8 @@ public class WebConfigForProject {
         Configuration.baseUrl = webConfig.getBaseUrl();
         Configuration.browser = webConfig.getBrowser().toString();
         Configuration.browserVersion = webConfig.getBrowserVersion();
+        Configuration.browserSize = webConfig.getBrowserSize();
+        Configuration.pageLoadStrategy = "eager";
 
         if (webConfig.isRemote()) {
             Configuration.remote = webConfig.getRemoteUrl();
