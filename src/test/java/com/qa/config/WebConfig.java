@@ -9,7 +9,7 @@ import org.aeonbits.owner.Config;
 public interface WebConfig extends Config {
 
     @Key("browser")
-    @DefaultValue("chrome")
+    @DefaultValue("CHROME")
     Browser getBrowser();
 
     @Key("browserVersion")
