@@ -7,15 +7,15 @@
 
 # 🧾 Содержание:
 
-- Технологии и инструменты
-- Список проверок, реализованных в автоматизированных тест-кейсах
-- Запуск тестов (Сборка в Jenkins)
-- Запуск тестов (Из терминала)
-- Allure-отчет
-- Интеграция с Allure TestOps
-- Интеграция с Jira
-- Уведомление в Telegram о результатах выполнения автоматизированных тестов
-- Видеопример прохождения тестов Selenoid
+- <a href="#tools"> Технологии и инструменты</a>
+- <a href="#cases"> Список проверок, реализованных в автоматизированных тест-кейсах</a>
+- <a href="#jenkins"> Запуск тестов (Сборка в Jenkins)</a>
+- <a href="#console"> Запуск тестов (Из терминала)</a>
+- <a href="#allureReport"> Allure-отчет</a>
+- <a href="#allure"> Интеграция с Allure TestOps</a>
+- <a href="#jira"> Интеграция с Jira</a>
+- <a href="#telegram"> Уведомление в Telegram о результатах выполнения автоматизированных тестов</a>
+- <a href="#video"> Видеопример прохождения тестов Selenoid</a>
 
 
 <a id="tools"></a>
@@ -42,7 +42,7 @@
 <img src="media/screen/Jenkins.png" alt="Jenkins" width="950"/></a>  
 </p>
 
-
+<a id="jenkins"></a>
 ## 📋 Параметры сборки в Jenkins:
 
 - _STAND_BASE_URL (URL Сайта, по умолчанию moskva.mts.ru)_
@@ -52,7 +52,7 @@
 - _BROWSER_VERSION (Версия браузера, по умолчанию 100.0)_
 - _BROWSER_SIZE (Размер окна браузера, по умолчанию 2560x1440)_
 
-
+<a id="console"></a>
 ## 🚀 Команда для запуска автотестов из терминала
 
 Удаленный запуск с использованием Jenkins и Selenoid (требуется логин и пароль):
@@ -60,6 +60,7 @@
 ./gradlew clean test -Denv=remote
 ```
 
+<a id="allureReport"></a>
 ## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/> </a>Интеграция с <a target="_blank" href="https://jenkins.autotests.cloud/job/MTS-autotests-EVLShevchuk/17/allure/">Allure Report</a>
 
 
@@ -82,7 +83,7 @@
 <img title="Allure Graphics2" src="media/screen/GraficsAllure2.png" width="850">  
 </p>
 
-
+<a id="allure"></a>
 ## <img alt="Allure_TO" height="25" src="media/logo/Allure_TO.svg" width="25"/> </a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/3677/dashboards">Allure TestOps</a>
 
 
@@ -98,12 +99,14 @@
 <img title="Allure Tests" src="media/screen/TestCasesOps.png" width="850">  
 </p>
 
+<a id="jira"></a>
 ## <img alt="Allure" height="25" src="media/logo/Jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-891">Jira</a>
 
 <p align="center">  
 <img title="Jira" src="media/screen/Jira.png" width="">  
 </p>
 
+<a id="telegram"></a>
 ____
 ## <img alt="Allure" height="25" src="media/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
 ____
@@ -111,6 +114,7 @@ ____
 <img title="Allure Overview Dashboard" src="media/screen/Notifications.png" width="550">  
 </p>
 
+<a id="video"></a>
 ____
 ## <img alt="Selenoid" height="25" src="media/logo/Selenoid.svg" width="25"/></a> Видеопример выполнения теста на Selenoid
 ____
