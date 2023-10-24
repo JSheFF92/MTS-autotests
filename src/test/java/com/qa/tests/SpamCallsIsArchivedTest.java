@@ -1,6 +1,5 @@
 package com.qa.tests;
 
-import com.qa.pages.MobileServiceArchivePage;
 import com.qa.pages.MobileServicePage;
 import com.qa.pages.SpamCallsArchivePage;
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +11,6 @@ import static io.qameta.allure.Allure.step;
 
 public class SpamCallsIsArchivedTest extends BaseTest {
 
-    MobileServiceArchivePage mobileServiceArchivePage = new MobileServiceArchivePage();
     MobileServicePage mobileServicePage = new MobileServicePage();
     SpamCallsArchivePage spamCallsIsArchivedPage = new SpamCallsArchivePage();
 
@@ -40,15 +38,10 @@ public class SpamCallsIsArchivedTest extends BaseTest {
                     .goToArchive();
         });
 
-//        step("Choice mobile services", () ->
-//            mobileServiceArchivePage
-//                    .goToArchiveList("Звонки")
-//        );
-
         step("Choice archive block calls", () -> {
         spamCallsIsArchivedPage
                 .goChoiceArchiveService("Блокировка спам-звонков")
                 .checkRightService("Блокировка спам-звонков");
-    });
+        });
     }
 }
