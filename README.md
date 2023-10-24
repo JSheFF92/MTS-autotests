@@ -2,7 +2,7 @@
 <h1 >Проект по автоматизации тестирования сайта <a href="https://moskva.mts.ru"> MTS</a></h1>
 
 <p align="center">  
-<img src="media/logo/LogoMTS.png" alt="MainLogo" width="400"/></a>  
+<a href="https://moskva.mts.ru"><img src="media/logo/LogoMTS.png" alt="MainLogo" width="400"/></a>  
 </p>
 
 # 🧾 Содержание:
