@@ -11,7 +11,7 @@ public class MainPage {
                     developers = $(".ng-scrollbar-wrapper div:nth-child(6)"),
                     headerItem = $(".header__top-item_more"),
                     goToServicesAndOptions = $(".navigations__cards-wrapper a:nth-child(2)"),
-                    buttonOpenNews = $(".footer__menu a:nth-child(7)"),
+                    buttonOpenNews = $(".footer__menu div:nth-child(7)"),
                     goToHeaderSearchText = $(".header-search__text"),
                     enterIntoTheSearch = $(".header-search__input"),
                     menuCatalog = $(".middle-menu__catalog-text"),
