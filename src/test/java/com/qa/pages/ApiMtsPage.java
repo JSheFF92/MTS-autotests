@@ -28,9 +28,9 @@ public class ApiMtsPage {
     }
 
     public ApiMtsPage checkAPIList(String[] value) {
-        String[] API = new String[]{Arrays.toString(value)};
-        for (int i = 0; i < API.length; i++) {
-            listAPI.shouldHave(text(API[i]));
+//        String[] API = new String[]{Arrays.toString(value)};
+        for (int i = 0; i < value.length; i++) {
+            listAPI.shouldHave(text(value[i]));
         }
 
         return this;
