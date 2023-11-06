@@ -2,13 +2,18 @@ package com.qa.tests;
 
 import com.qa.pages.NewsFor2023Page;
 import com.qa.pages.NewsForThePeriodPage;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
+import static io.qameta.allure.SeverityLevel.NORMAL;
 
-
+@Owner("Евгений Шевчук")
+@Epic(value = "News testing")
+@Feature(value = "Main functionality")
+@Story("News")
 public class NewsForThePeriodTest extends BaseTest {
 
     NewsForThePeriodPage newsPage = new NewsForThePeriodPage();
@@ -18,7 +23,8 @@ public class NewsForThePeriodTest extends BaseTest {
     @Tag("Smoke")
     @Tag("SmokePass")
     @Tag("News")
-    @DisplayName("Новости за период 2023 года")
+    @Severity(NORMAL)
+    @DisplayName("News for the period 2023")
     void newsForThePeriod() {
         step("Open form", () -> {
             mainPage
@@ -36,18 +42,18 @@ public class NewsForThePeriodTest extends BaseTest {
                     .checkNewsUrlAndNamePage("Новости")
         );
 
-        step("Choice news for 2023", () ->
+        step("Select news for 2023", () ->
             newsPage
                     .selectNewsYear("2023")
         );
 
-        step("Choice period news", () ->
+        step("Select period news", () ->
             newsPage
                     .selectNewsPeriod("Весь год")
 
         );
 
-        step("Choice categories news", () ->
+        step("Select categories news", () ->
             newsPage
                     .selectNewsCategories("Выбрать все")
 

@@ -1,12 +1,18 @@
 package com.qa.tests;
 
 import com.qa.pages.NoSearchResultPage;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
+import static io.qameta.allure.SeverityLevel.NORMAL;
 
+@Owner("Евгений Шевчук")
+@Epic(value = "Search testing")
+@Feature(value = "Main functionality")
+@Story("Search")
 public class FailedSearchResultTest extends BaseTest {
 
     NoSearchResultPage noSearchResultPage = new NoSearchResultPage();
@@ -15,7 +21,8 @@ public class FailedSearchResultTest extends BaseTest {
     @Tag("Smoke")
     @Tag("SmokeFailed")
     @Tag("FailedSearch")
-    @DisplayName("Отсутвие результатов поиска")
+    @Severity(NORMAL)
+    @DisplayName("No search results")
     void careerInITTest() {
         step("Open form", () -> {
             mainPage

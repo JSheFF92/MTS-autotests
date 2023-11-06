@@ -1,13 +1,19 @@
 package com.qa.tests;
 
 import com.qa.pages.ApiMtsPage;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
+import static io.qameta.allure.SeverityLevel.MINOR;
 
+@Owner("Евгений Шевчук")
+@Epic(value = "API page testing")
+@Feature(value = "Minor functionality")
+@Story("API")
 public class VerificationApiMtsTest extends BaseTest {
 
     ApiMtsPage verificationAPIMTSPage = new ApiMtsPage();
@@ -16,7 +22,8 @@ public class VerificationApiMtsTest extends BaseTest {
     @Tag("Smoke")
     @Tag("SmokePass")
     @Tag("ApiMts")
-    @DisplayName("Проверка списка API MTS")
+    @Severity(MINOR)
+    @DisplayName("Checking the MTS API list")
     void searchAPIMTSTest() {
         step("Open main page", () -> {
             open("https://moskva.mts.ru");

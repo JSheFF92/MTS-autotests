@@ -2,9 +2,6 @@ package com.qa.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
@@ -28,9 +25,8 @@ public class ApiMtsPage {
     }
 
     public ApiMtsPage checkAPIList(String[] value) {
-//        String[] API = new String[]{Arrays.toString(value)};
-        for (int i = 0; i < value.length; i++) {
-            listAPI.shouldHave(text(value[i]));
+        for (String ApiServices : value) {
+            listAPI.shouldHave(text(ApiServices));
         }
 
         return this;

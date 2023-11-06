@@ -2,12 +2,19 @@ package com.qa.tests;
 
 import com.qa.pages.CareerPage;
 import com.qa.pages.ItAndDigitalPage;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
+import static io.qameta.allure.SeverityLevel.CRITICAL;
 
+
+@Owner("Евгений Шевчук")
+@Epic(value = "Testing the vacancies page")
+@Feature(value = "Main functionality")
+@Story("Career in MTS")
 public class CareerPageTest extends BaseTest {
     ItAndDigitalPage itAndDigitalPage = new ItAndDigitalPage();
     CareerPage careerPage = new CareerPage();
@@ -16,7 +23,8 @@ public class CareerPageTest extends BaseTest {
     @Tag("Smoke")
     @Tag("SmokePass")
     @Tag("Vacancies")
-    @DisplayName("Страница вакансий в ИТ")
+    @Severity(CRITICAL)
+    @DisplayName("IT Jobs Page")
     void careerInITTest() {
         step("Open form", () -> {
             mainPage

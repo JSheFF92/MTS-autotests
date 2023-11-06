@@ -2,13 +2,19 @@ package com.qa.tests;
 
 import com.qa.pages.MobileServicePage;
 import com.qa.pages.SpamCallsArchivePage;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
+import static io.qameta.allure.SeverityLevel.MINOR;
 
+@Owner("Евгений Шевчук")
+@Epic(value = "Archive testing")
+@Feature(value = "Minor functionality")
+@Story("Archive")
 public class SpamCallsIsArchivedTest extends BaseTest {
 
     MobileServicePage mobileServicePage = new MobileServicePage();
@@ -18,7 +24,8 @@ public class SpamCallsIsArchivedTest extends BaseTest {
     @Tag("Smoke")
     @Tag("SmokePass")
     @Tag("SpamCalls")
-    @DisplayName("Архивная услуга 'Блокирование спам звонков'")
+    @Severity(MINOR)
+    @DisplayName("Archived service 'Blocking spam calls'")
     void archiveSpamCallsTest() {
         step("Open main page", () -> {
             open("https://moskva.mts.ru");
@@ -38,7 +45,7 @@ public class SpamCallsIsArchivedTest extends BaseTest {
                     .goToArchive();
         });
 
-        step("Choice archive block calls", () ->
+        step("Select archive block calls", () ->
         spamCallsIsArchivedPage
                     .goChoiceArchiveService("Блокировка спам-звонков")
         );

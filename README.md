@@ -35,7 +35,7 @@
 - Страница вакансий в IT и Digital
 - Наличие блокировки спам-звонков в архивных предложениях
 
-## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MTS-autotests-EVLShevchuk/)
+## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MTS-autotests-EVLShevchuk/allure/)
 
 
 <p align="center">  
