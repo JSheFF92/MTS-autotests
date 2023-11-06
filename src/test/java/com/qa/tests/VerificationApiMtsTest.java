@@ -39,7 +39,8 @@ public class VerificationApiMtsTest extends BaseTest {
 
         step("Checking section services APIs are present on the page", () ->
             verificationAPIMTSPage
-                    .checkAPIList()
+                    .checkAPIList(new String[]{"Мобильный ID API", "Дизайн-система МТС",
+                            "МТС Касса API", "Agents API", "Agents API (тестовый стенд)"})
         );
     }
 }
