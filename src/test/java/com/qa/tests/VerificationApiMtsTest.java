@@ -37,7 +37,7 @@ public class VerificationApiMtsTest extends BaseTest {
                     .searchServicesList("СПИСОК СЕРВИСОВ");
         });
 
-        step("Services APIs are present on the page", () ->
+        step("Checking section services APIs are present on the page", () ->
             verificationAPIMTSPage
                     .checkAPIList()
         );

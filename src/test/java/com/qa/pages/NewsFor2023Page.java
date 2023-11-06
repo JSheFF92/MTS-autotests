@@ -9,7 +9,7 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class NewsFor2023Page {
 
     private final SelenideElement
-                    checkResult = $x("//*[contains(text(), '.2023')]");
+            checkResult = $x("//*[contains(text(), '.2023')]");
 
     public NewsFor2023Page checkFinalResult() {
         webdriver().shouldHave(url("https://moskva.mts.ru/personal/novosti/2023"));

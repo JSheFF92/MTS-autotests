@@ -9,8 +9,8 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class ApiMtsPage {
 
     private final SelenideElement
-                    servicesList = $(".dqyHYH"),
-                    listAPI = $(".eqUlAG");
+            servicesList = $(".dqyHYH"),
+            listAPI = $(".eqUlAG");
 
     public ApiMtsPage checkDevelopersUrl() {
         webdriver().shouldHave(url("https://developers.mts.ru/"));

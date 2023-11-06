@@ -7,15 +7,15 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
     private final SelenideElement
-                    buttonOpenCareer = $x("//a[contains(text(), 'Карьера в МТС')]"),
-                    developers = $(".ng-scrollbar-wrapper div:nth-child(6)"),
-                    headerItem = $(".header__top-item_more"),
-                    goToServicesAndOptions = $(".navigations__cards-wrapper a:nth-child(2)"),
-                    buttonOpenNews = $(".footer__menu div:nth-child(7)"),
-                    goToHeaderSearchText = $(".header-search__text"),
-                    enterIntoTheSearch = $(".header-search__input"),
-                    menuCatalog = $(".middle-menu__catalog-text"),
-                    menuCardList = $(".in-sidebar a:nth-child(4)");
+            buttonOpenCareer = $x("//a[contains(text(), 'Карьера в МТС')]"),
+            developers = $(".ng-scrollbar-wrapper div:nth-child(6)"),
+            headerItem = $(".header__top-item_more"),
+            goToServicesAndOptions = $(".navigations__cards-wrapper a:nth-child(2)"),
+            buttonOpenNews = $(".footer__menu div:nth-child(7)"),
+            goToHeaderSearchText = $(".header-search__text"),
+            enterIntoTheSearch = $(".header-search__input"),
+            menuCatalog = $(".middle-menu__catalog-text"),
+            menuCardList = $(".in-sidebar a:nth-child(4)");
 
     public MainPage openPage() {
         open("/");

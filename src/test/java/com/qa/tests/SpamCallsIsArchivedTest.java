@@ -38,10 +38,14 @@ public class SpamCallsIsArchivedTest extends BaseTest {
                     .goToArchive();
         });
 
-        step("Choice archive block calls", () -> {
+        step("Choice archive block calls", () ->
         spamCallsIsArchivedPage
-                .goChoiceArchiveService("Блокировка спам-звонков")
-                .checkRightService("Блокировка спам-звонков");
-        });
+                    .goChoiceArchiveService("Блокировка спам-звонков")
+        );
+
+        step("Checking the selected section", () ->
+            spamCallsIsArchivedPage
+                    .checkRightService("Блокировка спам-звонков")
+        );
     }
 }

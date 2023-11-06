@@ -53,7 +53,7 @@ public class NewsForThePeriodTest extends BaseTest {
 
         );
 
-        step("Check result", () ->
+        step("Checking the selected period", () ->
             newsFor2023Page
                     .checkFinalResult()
         );

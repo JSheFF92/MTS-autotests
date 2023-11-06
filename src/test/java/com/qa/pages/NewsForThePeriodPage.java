@@ -10,13 +10,13 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class NewsForThePeriodPage {
 
     private final SelenideElement
-                    newsNamePage = $(".section-box__title"),
-                    widgetYear = $("[id='mat-select-value-1']"),
-                    choiceWidgetYear = $(".mat-select-old-ds__select-panel"),
-                    widgetPeriod = $("[id='mat-select-2']"),
-                    choiceWidgetPeriod = $(".mat-select-old-ds__select-panel"),
-                    widgetCategories = $("[id='mat-select-4']"),
-                    choiceWidgetCategories = $("#mat-checkbox-1");
+            newsNamePage = $(".section-box__title"),
+            widgetYear = $("[id='mat-select-value-1']"),
+            choiceWidgetYear = $(".mat-select-old-ds__select-panel"),
+            widgetPeriod = $("[id='mat-select-2']"),
+            choiceWidgetPeriod = $(".mat-select-old-ds__select-panel"),
+            widgetCategories = $("[id='mat-select-4']"),
+            choiceWidgetCategories = $("#mat-checkbox-1");
 
     public NewsForThePeriodPage checkNewsUrlAndNamePage(String value) {
         webdriver().shouldHave(url("https://moskva.mts.ru/personal/novosti"));

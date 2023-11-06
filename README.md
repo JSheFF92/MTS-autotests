@@ -39,7 +39,7 @@
 
 
 <p align="center">  
-<img src="media/screen/Jenkins.png" alt="Jenkins" width="950"/></a>  
+<img src="media/screen/Jenkins.png" alt="Jenkins" width="950"/>  
 </p>
 
 <a id="jenkins"></a>

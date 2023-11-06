@@ -38,7 +38,7 @@ public class CareerPageTest extends BaseTest {
                     .openITAndDigitalSection()
         );
 
-        step("Section Vacancies in IT", () -> {
+        step("Checking section Vacancies in IT", () -> {
             itAndDigitalPage
                     .checkItAndDigitalUrl()
                     .checkVacanciesText("Вакансии");

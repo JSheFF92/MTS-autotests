@@ -8,9 +8,9 @@ import static com.codeborne.selenide.Selenide.$;
 public class MobileServicePage {
 
     private final SelenideElement
-                    checkResult = $("h1"),
-                    goArchive = $("mts-button .mts-button--color--ghost"),
-                    acceptCookies = $(".mat-dialog-content button");
+            checkResult = $("h1"),
+            goArchive = $("mts-button .mts-button--color--ghost"),
+            acceptCookies = $(".mat-dialog-content button");
 
     public MobileServicePage checkMobileServices(String value) {
         checkResult.shouldHave(text(value));

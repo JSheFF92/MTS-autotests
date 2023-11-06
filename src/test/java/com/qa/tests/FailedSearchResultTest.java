@@ -29,7 +29,7 @@ public class FailedSearchResultTest extends BaseTest {
                     .search("Hello, I'm Evgeniy and I'm looking for a job");
         });
 
-        step("Nothing found for your request", () ->
+        step("Checking error message", () ->
             noSearchResultPage
                      .nothingFoundResult("По вашему запросу ничего не найдено")
         );
