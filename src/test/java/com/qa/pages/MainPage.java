@@ -3,6 +3,7 @@ package com.qa.pages;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
@@ -15,7 +16,12 @@ public class MainPage {
             goToHeaderSearchText = $(".header-search__text"),
             enterIntoTheSearch = $(".header-search__input"),
             menuCatalog = $(".middle-menu__catalog-text"),
-            menuCardList = $(".in-sidebar a:nth-child(4)");
+            menuCardList = $(".in-sidebar a:nth-child(4)"),
+
+    titleHeader = $("h2"),
+            numberField = $("[name='phone']"),
+            amountField = $("[name='amount']"),
+            replenishmentButton = $("[type='submit']");
 
     public MainPage openPage() {
         open("/");
@@ -75,6 +81,30 @@ public class MainPage {
 
     public MainPage goToDevelopersPage() {
         developers.click();
+
+        return this;
+    }
+
+    public MainPage checkTitle(String value) {
+        titleHeader.shouldHave(text(value));
+
+        return this;
+    }
+
+    public MainPage checkNumberField() {
+        numberField.shouldHave(visible);
+
+        return this;
+    }
+
+    public MainPage checkAmountField() {
+        amountField.shouldHave(visible);
+
+        return this;
+    }
+
+    public MainPage checkReplenishmentButton(String value) {
+        replenishmentButton.shouldHave(text(value));
 
         return this;
     }
