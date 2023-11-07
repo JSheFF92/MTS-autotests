@@ -97,7 +97,7 @@
 ## 📄 Авто и Ручные тест-кейсы
 
 <p align="center">  
-<img title="Allure Tests" src="media/screen/TestCasesOps.png" width="850">  
+<img title="Allure Tests" src="media/screen/TestCasesOps1.png" width="850">  
 </p>
 
 <a id="jira"></a>
