@@ -34,6 +34,7 @@
 - Проверка списка API MTS
 - Страница вакансий в IT и Digital
 - Наличие блокировки спам-звонков в архивных предложениях
+- Проверка формы пополнения баланса
 
 ## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MTS-autotests-EVLShevchuk/allure/)
 
@@ -61,26 +62,26 @@
 ```
 
 <a id="allureReport"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/> </a>Интеграция с <a target="_blank" href="https://jenkins.autotests.cloud/job/MTS-autotests-EVLShevchuk/17/allure/">Allure Report</a>
+## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/> </a>Интеграция с <a target="_blank" href="https://jenkins.autotests.cloud/job/MTS-autotests-EVLShevchuk/allure/">Allure Report</a>
 
 
 ## 🖨️ Основная страница отчёта
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screen/MainReportAllure.png" width="850">  
+<img title="Allure Overview Dashboard" src="media/screen/MainReportAllure1.png" width="850">  
 </p>  
 
 ## 📄 Тест-кейсы
 
 <p align="center">  
-<img title="Allure Tests" src="media/screen/TestCasesAllure.png" width="850">   
+<img title="Allure Tests" src="media/screen/TestCasesAllure1.png" width="850">   
 </p>
 
 ## 📊 Графики
 
 <p align="center">   
-<img title="Allure Graphics1" src="media/screen/GraficsAllure1.png" width="850">  
-<img title="Allure Graphics2" src="media/screen/GraficsAllure2.png" width="850">  
+<img title="Allure Graphics1" src="media/screen/GraficsAllure11.png" width="850">  
+<img title="Allure Graphics2" src="media/screen/GraficsAllure12.png" width="850">  
 </p>
 
 <a id="allure"></a>
@@ -90,7 +91,7 @@
 ## 🖨️ Основная страница отчёта
 
 <p align="center">  
-<img title="Allure TestOps Dashboard" src="media/screen/MainReportOps.png" width="850">  
+<img title="Allure TestOps Dashboard" src="media/screen/MainReportOps1.png" width="850">  
 </p>  
 
 ## 📄 Авто и Ручные тест-кейсы
@@ -103,7 +104,7 @@
 ## <img alt="Allure" height="25" src="media/logo/Jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-891">Jira</a>
 
 <p align="center">  
-<img title="Jira" src="media/screen/Jira.png" width="">  
+<img title="Jira" src="media/screen/Jira1.png" width="">  
 </p>
 
 <a id="telegram"></a>
@@ -111,7 +112,7 @@ ____
 ## <img alt="Allure" height="25" src="media/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
 ____
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screen/Notifications.png" width="550">  
+<img title="Allure Overview Dashboard" src="media/screen/Notifications1.png" width="550">  
 </p>
 
 <a id="video"></a>
