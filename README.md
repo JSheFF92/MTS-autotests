@@ -36,7 +36,7 @@
 - Наличие блокировки спам-звонков в архивных предложениях
 - Проверка формы пополнения баланса
 
-## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MTS-autotests-EVLShevchuk/allure/)
+## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MTS-autotests-EVLShevchuk/)
 
 
 <p align="center">  
